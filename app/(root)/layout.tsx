@@ -1,8 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { ReactNode } from "react";
+import { isAuthenticated } from "@/lib/actions/auth.action";
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
+  const isUserAuthenticated = isAuthenticated;
   return (
     <div className="root-layout">
       <nav>
