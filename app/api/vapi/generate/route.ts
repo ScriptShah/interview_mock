@@ -11,30 +11,18 @@ const ai = new GoogleGenAI({
 
 
 
-// export async function GET() {
-//   try {
-//     (async () => {
-//       const chat = await cohere.chat({
-//         model: "command",
-//         message: "Tell me a story in 5 parts!",
-//       });
-
-//       console.log(chat);
-//     })();
-
-//   } catch (error) {
-//     console.error("OpenAI Error:", error);
-//     return Response.json(
-//       {
-//         success: false,
-//         error: "Failed to generate OpenAI response",
-//       },
-//       {
-//         status: 500,
-//       }
-//     );
-//   }
-// }
+export async function GET() {
+    return Response.json(
+      {
+        success: true,
+        error: "Thank you ",
+      },
+      {
+        status: 200,
+      }
+    );
+  
+}
 
 
 export async function POST(request: Request) {
