@@ -72,12 +72,12 @@ const Agent = ({
       id: "feedback-id",
     };
 
-    if (success && id) {
-      router.push(`/interview/${interviewId}/feedback`);
-    } else {
-      console.error("Error saving feedback");
-      router.push("/");
-    }
+    // if (success && id) {
+    //   router.push(`/interview/${interviewId}/feedback`);
+    // } else {
+    //   console.error("Error saving feedback");
+    //   router.push("/");
+    // }
   };
 
   useEffect(() => {
