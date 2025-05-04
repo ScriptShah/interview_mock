@@ -51,7 +51,10 @@ export async function POST(request: Request) {
       `,
         },
       ],
-      model: "openai/o4-mini",
+      model: "openai/gpt-4o-mini",
+      temperature: 1,
+      max_tokens: 4096,
+      top_p: 1
     });
     console.log(questionsText.choices[0].message.content);
     console.log("Interview Generation Completed");
